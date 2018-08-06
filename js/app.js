@@ -3,7 +3,6 @@ $(document).ready( function() {
   //SPLASH SCREEN
   $('#home').delay('3000').fadeIn('slow');
 
-
   // SEARCH
   $('#busca').keyup( function() {
     var palavra = $('#busca').val();
@@ -22,7 +21,6 @@ $(document).ready( function() {
         var myLong = value.longitude
         var desc = value.description
 
-        $('#result-busca').append( $()'<img src="' + img + '" title="'+ nome +'" width="auto" height="150px" class="align-items-center px-2 py-2" data-toggle="modal" data-target="#window">');
         $('#result-busca').append('<img src="' + img + '" title="'+ nome +'" width="auto" height="150px" class="align-items-center px-2 py-2" data-toggle="modal" data-target="#window">');
         $('#nome').append(nome);
         $('#lat-long').append(myLat + ', ' + myLong);
@@ -70,4 +68,3 @@ function addMarker(location, map) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
