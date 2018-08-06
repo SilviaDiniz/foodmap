@@ -1,1 +1,177 @@
 /*Add your CSS*/
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+}
+
+.custon-class {
+  display: none;
+}
+
+/* PAG ABERTURA */
+#splash, #home{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+}
+
+#splash{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.text-splash{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #FFC107;
+}
+
+/* PAGE HOME */
+#home{
+  display: none;
+}
+
+.titulo{
+  text-align: center;
+  color: #FFC107;
+  padding-top: 1rem;
+}
+
+.fio{
+  border-top: solid 0.12rem white;
+  max-width: 90%;
+}
+
+#map{
+  width: 95%;
+  height: 35vh;
+  border-color: solid 0.0625rem white ;
+}
+
+/* SEARCH */
+.pesquisa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#busca{
+  width: 50%;
+  height: 5vh;
+  text-align: left;
+  padding-left: 0.3rem;
+}
+
+.btn-search{
+  height: 5vh;
+  background-color: #FFC107;
+  cursor: pointer;
+}
+
+#texto{
+  width: 30%;
+  height: 4vh;
+  text-align: left;
+}
+
+#text:focus{
+  border: solid 0.12rem #FFC107;
+}
+
+
+@media screen and (min-width: 576px){
+  .custon-class{
+    display: block;
+  }
+
+  /* PAG ABERTURA */
+  #splash, #home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+  }
+
+  #splash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+
+  .text-splash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #FFC107;
+  }
+
+  /* PAGE HOME */
+  #home{
+    display: none;
+  }
+
+  .titulo{
+    text-align: center;
+    color: #FFC107;
+    padding-top: 1rem;
+  }
+
+  .fio{
+    border-top: solid 0.12rem white;
+    max-width: 90%;
+  }
+
+  #map{
+    width: 95%;
+    height: 35vh;
+    border-color: solid 0.0625rem white ;
+  }
+
+  /* SEARCH */
+  .pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #busca{
+    width: 50vw;
+    height: 5vh;
+    text-align: left;
+    padding-left: 0.3rem;
+  }
+
+  .btn-search{
+    height: 5vh;
+    background-color: #FFC107;
+    cursor: pointer;
+  }
+
+  #texto{
+    width: 30%;
+    height: 4vh;
+    text-align: left;
+  }
+
+  #text:focus{
+    border: solid 0.12rem #FFC107;
+  }
+
